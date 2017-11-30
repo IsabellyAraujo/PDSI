@@ -3,7 +3,15 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head runat="server">
+     <style type="text/css">
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+  </style>
     <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
     <link href="App_Themes/css/bootstrap.css" rel="stylesheet" />
     <link href="App_Themes/css/comercelly.css" rel="stylesheet" />
@@ -19,7 +27,7 @@
          <p>
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cliente/CadastroCliente.aspx">Cliente</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink2" runat="server">Fornecedor</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Fornecedor/CadastroFornecedor.aspx">Fornecedor</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:HyperLink ID="HyperLink3" runat="server">Venda</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

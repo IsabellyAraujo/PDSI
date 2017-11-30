@@ -1,16 +1,45 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CadastroFornecedor.aspx.cs" Inherits="PSI.Cadastro_Fornecedor" %>
+﻿<%@ Page Title="Fornecedor" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="CadastroFornecedor.aspx.cs" Inherits="PSI.Cadastro_Fornecedor"  Theme="css" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
+    Cadastro Fornecedor
+    &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Incluir" />
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+        <ItemTemplate>
+            <table>
+                 <tr>
+                     <td>
+                         Nome
+                     </td>
+                     <td>
+                         CPF
+                     </td>
+                     <td>
+                         EMAIL
+                     </td>
+                </tr>
+                 <tr>
+                   <td>
+                        <asp:Label ID="nomeLabel" runat="server" Text='<%# Eval("nome") %>' />
+                    </td>
+                     <td>
+                        <asp:Label ID="cpfLabel" runat="server" Text='<%# Eval("cpf") %>' />
+                    </td>
+                    <td>
+                        <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                    </td>
+                     <td>
+                        <asp:LinkButton ID="LinkButton1" runat="server">Editar</asp:LinkButton>
+                    </td>
+                    <td>
+                        <asp:LinkButton ID="LinkButton2" runat="server">Excluir</asp:LinkButton>
+                    </td>
+                </tr>
+             </table>
+        </ItemTemplate>
+    </asp:DataList>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PDSI_2017_IsabellyConnectionString %>" SelectCommand="SELECT [nome], [cpf], [email] FROM [Fornecedor]"></asp:SqlDataSource>
+</asp:Content>

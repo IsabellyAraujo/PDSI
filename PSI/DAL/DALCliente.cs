@@ -87,8 +87,8 @@ namespace PSI.DAL
         {
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-
-            SqlCommand cmd = new SqlCommand("Delete Cliente whe codigo = @codigo", conn);
+            SqlCommand cmd = conn.CreateCommand();
+            cmd.CommandText = "DELETE FROM Cliente where codigo = @codigo";
             cmd.Parameters.AddWithValue("@codigo", codigo);
 
             cmd.ExecuteNonQuery();
@@ -99,9 +99,8 @@ namespace PSI.DAL
         {
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-
-            SqlCommand cmd = new SqlCommand("Insert into Cliente (nome, cpf, cidade, estado, email, endereco, telefone) values ('@nome', '@cpf', '@cidade', '@estado', '@email', '@endereco', '@telefone')", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand com = conn.CreateCommand();
+            SqlCommand cmd = new SqlCommand("INSERT INTO Cliente(nome, cpf, cidade, estado, email, endereco, telefone) VALUES (@nome, @cpf, @cidade, @estado, @email, @endereco, @telefone)", conn);
             cmd.Parameters.AddWithValue("@nome", obj.nome);
             cmd.Parameters.AddWithValue("@cpf", obj.cpf);
             cmd.Parameters.AddWithValue("@cidade", obj.cidade);

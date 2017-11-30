@@ -20,6 +20,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,6 +66,7 @@
     <Content Include="App_Themes\css\bootstrap.min.css" />
     <Content Include="App_Themes\css\comercelly.css" />
     <Content Include="Cliente\CadastroCliente.aspx" />
+    <Content Include="Cliente\EditarCliente.aspx" />
     <Content Include="Cliente\IncluirCliente.aspx" />
     <Content Include="Compra\CadastroCompra.aspx" />
     <Content Include="Fornecedor\CadastroFornecedor.aspx" />
@@ -84,6 +86,13 @@
     </Compile>
     <Compile Include="Cliente\CadastroCliente.aspx.designer.cs">
       <DependentUpon>CadastroCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente\EditarCliente.aspx.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\EditarCliente.aspx.designer.cs">
+      <DependentUpon>EditarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cliente\IncluirCliente.aspx.cs">
       <DependentUpon>IncluirCliente.aspx</DependentUpon>

@@ -8,3 +8,9 @@ C:\Users\20141011110077.IFRN.000\Documents\Visual Studio 2012\Projects\PSI-maste
 C:\Users\20141011110077.IFRN.000\Documents\Visual Studio 2012\Projects\PSI-master\PSI\PSI\bin\PSI.dll
 C:\Users\20141011110077.IFRN.000\Documents\Visual Studio 2012\Projects\PSI-master\PSI\PSI\bin\PSI.pdb
 C:\Users\20141011110077.IFRN.000\Documents\Visual Studio 2012\Projects\PSI-master\PSI\PSI\obj\Debug\PSI.pdb
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\bin\PSI.dll.config
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\bin\PSI.dll
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\bin\PSI.pdb
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.csprojResolveAssemblyReference.cache
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.dll
+C:\Users\Arthur\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.pdb

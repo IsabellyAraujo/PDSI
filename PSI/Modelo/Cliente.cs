@@ -39,12 +39,26 @@ namespace PSI.Modelo
             this.endereco = aendereco;
             this.telefone = atelefone;
         }
-
+        public Cliente(string anome, string acpf, string acidade, string aestado, string aemail, string aendereco, string atelefone)
+        {
+            this.nome = anome;
+            this.cpf = acpf;
+            this.cidade = acidade;
+            this.estado = aestado;
+            this.email = aemail;
+            this.endereco = aendereco;
+            this.telefone = atelefone;
+        }
+       
         public Cliente(string anome, string acpf, string aemail)
         {
             this.nome = anome;
             this.cpf = acpf;
             this.email = aemail;
+        }
+        public Cliente(int acodigo)
+        {
+            this.codigo = acodigo;
         }
     }
 }
