@@ -37,7 +37,7 @@
                         <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Cliente/EditarCliente.aspx">Editar</asp:LinkButton>
                     </td>
                     <td>
-                        <asp:LinkButton ID="LinkButton2" runat="server" OnPreRender="LinkButton2_PreRender">Excluir</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Cliente/ExcluirCliente.aspx">Excluir</asp:LinkButton>
                     </td>
                 </tr>                
                

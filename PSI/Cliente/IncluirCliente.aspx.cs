@@ -21,7 +21,7 @@ namespace PSI.Cliente
             Modelo.Cliente cliente = new Modelo.Cliente(TextBoxNome.Text, TextBoxCPF.Text, TextBoxCidade.Text, TextBoxEstado.Text, TextBoxEmail.Text, TextBoxEndereco.Text, TextBoxTelefone.Text);
             DALCliente.Insert(cliente);
 
-            Response.Redirect("~\\CadastroCliente.aspx");
+            Response.Redirect("~\\Cliente\\CadastroCliente.aspx");
         }
     }
 }

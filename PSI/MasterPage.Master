@@ -5,7 +5,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head runat="server">
-     <style type="text/css">
+     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Commercely</title> 
+    <style type="text/css">
         td, th {
             border: 1px solid #dddddd;
             text-align: left;
@@ -15,28 +18,45 @@
     <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
     <link href="App_Themes/css/bootstrap.css" rel="stylesheet" />
     <link href="App_Themes/css/comercelly.css" rel="stylesheet" />
-    <title></title>
+    <link href="App_Themes/css/bootstrap-reboot.css" rel="stylesheet" />
+    <link href="App_Themes/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="App_Themes/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="App_Themes/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <link href="App_Themes/css/bootstrap.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+         <div class="container">
+              <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Index.aspx">Commercely</asp:LinkButton>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Cliente/CadastroCliente.aspx">Cliente</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                       <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Fornecedor/CadastroFornecedor.aspx">Fornecedor</asp:LinkButton>
+                    </li>
+                    <li class="nav-item">
+                           <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Venda/CadastroVenda.aspx">Venda</asp:LinkButton>
+                    </li>
+			        <li class="nav-item">
+                         <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Compra/CadastroCompra.aspx">Compra</asp:LinkButton>
+                    </li>
+			        <li class="nav-item">
+                          <asp:LinkButton ID="LinkButton6" runat="server" PostBackUrl="~/Produto/CadastroProduto.aspx">Produto</asp:LinkButton>
+                    </li>
+			        <li class="nav-item">
+                             <asp:LinkButton ID="LinkButton7" runat="server" PostBackUrl="~/Funcionario/CadastroFuncionario.aspx">Funcionário</asp:LinkButton>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+        </nav>
+
     <div>
-         <p>
-             Projeto de Sistemas para Internet</p>
-         <p>
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Cliente/CadastroCliente.aspx">Cliente</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Fornecedor/CadastroFornecedor.aspx">Fornecedor</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink3" runat="server">Venda</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink4" runat="server">Compra</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink5" runat="server">Produto</asp:HyperLink>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:HyperLink ID="HyperLink6" runat="server">Funcionário</asp:HyperLink>
-            </p>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
     </div>

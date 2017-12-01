@@ -67,12 +67,22 @@
     <Content Include="App_Themes\css\comercelly.css" />
     <Content Include="Cliente\CadastroCliente.aspx" />
     <Content Include="Cliente\EditarCliente.aspx" />
+    <Content Include="Cliente\ExcluirCliente.aspx" />
     <Content Include="Cliente\IncluirCliente.aspx" />
     <Content Include="Compra\CadastroCompra.aspx" />
+    <Content Include="Compra\EditarCompra.aspx" />
+    <Content Include="Compra\ExcluirCompra.aspx" />
+    <Content Include="Compra\IncluirCompra.aspx" />
     <Content Include="Fornecedor\CadastroFornecedor.aspx" />
+    <Content Include="Fornecedor\EditarFornecedor.aspx" />
+    <Content Include="Fornecedor\ExcluirFornecedor.aspx" />
+    <Content Include="Fornecedor\IncluirFornecedor.aspx" />
     <Content Include="Funcionario\CadastroFuncionario.aspx" />
     <Content Include="PagamentoSalario\CadastroPagamentoSalario.aspx" />
     <Content Include="Produto\CadastroProduto.aspx" />
+    <Content Include="Produto\EditarProduto.aspx" />
+    <Content Include="Produto\ExcluirProduto.aspx" />
+    <Content Include="Produto\IncluirProduto.aspx" />
     <Content Include="Venda\CadastroVenda.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Web.config">
@@ -94,6 +104,13 @@
     <Compile Include="Cliente\EditarCliente.aspx.designer.cs">
       <DependentUpon>EditarCliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cliente\ExcluirCliente.aspx.cs">
+      <DependentUpon>ExcluirCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cliente\ExcluirCliente.aspx.designer.cs">
+      <DependentUpon>ExcluirCliente.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cliente\IncluirCliente.aspx.cs">
       <DependentUpon>IncluirCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -108,12 +125,54 @@
     <Compile Include="Compra\CadastroCompra.aspx.designer.cs">
       <DependentUpon>CadastroCompra.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Compra\EditarCompra.aspx.cs">
+      <DependentUpon>EditarCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compra\EditarCompra.aspx.designer.cs">
+      <DependentUpon>EditarCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compra\ExcluirCompra.aspx.cs">
+      <DependentUpon>ExcluirCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compra\ExcluirCompra.aspx.designer.cs">
+      <DependentUpon>ExcluirCompra.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Compra\IncluirCompra.aspx.cs">
+      <DependentUpon>IncluirCompra.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Compra\IncluirCompra.aspx.designer.cs">
+      <DependentUpon>IncluirCompra.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Fornecedor\CadastroFornecedor.aspx.cs">
       <DependentUpon>CadastroFornecedor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Fornecedor\CadastroFornecedor.aspx.designer.cs">
       <DependentUpon>CadastroFornecedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\EditarFornecedor.aspx.cs">
+      <DependentUpon>EditarFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\EditarFornecedor.aspx.designer.cs">
+      <DependentUpon>EditarFornecedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\ExcluirFornecedor.aspx.cs">
+      <DependentUpon>ExcluirFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\ExcluirFornecedor.aspx.designer.cs">
+      <DependentUpon>ExcluirFornecedor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor\IncluirFornecedor.aspx.cs">
+      <DependentUpon>IncluirFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fornecedor\IncluirFornecedor.aspx.designer.cs">
+      <DependentUpon>IncluirFornecedor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Funcionario\CadastroFuncionario.aspx.cs">
       <DependentUpon>CadastroFuncionario.aspx</DependentUpon>
@@ -135,6 +194,27 @@
     </Compile>
     <Compile Include="Produto\CadastroProduto.aspx.designer.cs">
       <DependentUpon>CadastroProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\EditarProduto.aspx.cs">
+      <DependentUpon>EditarProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produto\EditarProduto.aspx.designer.cs">
+      <DependentUpon>EditarProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\ExcluirProduto.aspx.cs">
+      <DependentUpon>ExcluirProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produto\ExcluirProduto.aspx.designer.cs">
+      <DependentUpon>ExcluirProduto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\IncluirProduto.aspx.cs">
+      <DependentUpon>IncluirProduto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produto\IncluirProduto.aspx.designer.cs">
+      <DependentUpon>IncluirProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Venda\CadastroVenda.aspx.cs">
       <DependentUpon>CadastroVenda.aspx</DependentUpon>
