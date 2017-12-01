@@ -78,6 +78,7 @@
     <Content Include="Fornecedor\ExcluirFornecedor.aspx" />
     <Content Include="Fornecedor\IncluirFornecedor.aspx" />
     <Content Include="Funcionario\CadastroFuncionario.aspx" />
+    <Content Include="imagens\pexels-photo-461146.jpeg" />
     <Content Include="PagamentoSalario\CadastroPagamentoSalario.aspx" />
     <Content Include="Produto\CadastroProduto.aspx" />
     <Content Include="Produto\EditarProduto.aspx" />

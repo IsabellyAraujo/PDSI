@@ -56,6 +56,13 @@ namespace PSI.Modelo
             this.cpf = acpf;
             this.email = aemail;
         }
+        public Cliente(int acodigo, string anome, string acpf, string aemail)
+        {
+            this.codigo = acodigo;
+            this.nome = anome;
+            this.cpf = acpf;
+            this.email = aemail;
+        }
         public Cliente(int acodigo)
         {
             this.codigo = acodigo;

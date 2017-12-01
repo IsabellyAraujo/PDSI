@@ -14,6 +14,7 @@
             text-align: left;
             padding: 8px;
         }
+        
   </style>
     <%--<link href="css/bootstrap.css" rel="stylesheet" />--%>
     <link href="App_Themes/css/bootstrap.css" rel="stylesheet" />
@@ -30,32 +31,41 @@
     <form id="form1" runat="server">
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
          <div class="container">
-              <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Index.aspx">Commercely</asp:LinkButton>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
+              <asp:LinkButton ID="LinkButton1" Font-Underline="False" runat="server" PostBackUrl="~/Index.aspx" ForeColor="White">Commercely</asp:LinkButton>
+             <div class="collapse navbar-collapse" id="navbarResponsive">
                   <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                      <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Cliente/CadastroCliente.aspx">Cliente</asp:LinkButton>
+                      <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Cliente/CadastroCliente.aspx"  ForeColor="White">Cliente</asp:LinkButton>
                     </li>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <li class="nav-item">
-                       <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Fornecedor/CadastroFornecedor.aspx">Fornecedor</asp:LinkButton>
+                       <asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Fornecedor/CadastroFornecedor.aspx" ForeColor="White">Fornecedor</asp:LinkButton>
                     </li>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                     <li class="nav-item">
-                           <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Venda/CadastroVenda.aspx">Venda</asp:LinkButton>
+                           <asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Venda/CadastroVenda.aspx" ForeColor="White">Venda</asp:LinkButton>
                     </li>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 			        <li class="nav-item">
-                         <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Compra/CadastroCompra.aspx">Compra</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Compra/CadastroCompra.aspx" ForeColor="White">Compra</asp:LinkButton>
                     </li>
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 			        <li class="nav-item">
-                          <asp:LinkButton ID="LinkButton6" runat="server" PostBackUrl="~/Produto/CadastroProduto.aspx">Produto</asp:LinkButton>
+                          <asp:LinkButton ID="LinkButton6" runat="server" PostBackUrl="~/Produto/CadastroProduto.aspx" ForeColor="White">Produto</asp:LinkButton>
                     </li>
+                      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 			        <li class="nav-item">
-                             <asp:LinkButton ID="LinkButton7" runat="server" PostBackUrl="~/Funcionario/CadastroFuncionario.aspx">Funcionário</asp:LinkButton>
+                             <asp:LinkButton ID="LinkButton7" runat="server" PostBackUrl="~/Funcionario/CadastroFuncionario.aspx" ForeColor="White">Funcionário</asp:LinkButton>
                     </li>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                   </ul>
                 </div>
           </div>
+          <div class="rodape" id="rdp">
+          </div>
         </nav>
-
+        <br/>
+        <br/>
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         </asp:ContentPlaceHolder>
