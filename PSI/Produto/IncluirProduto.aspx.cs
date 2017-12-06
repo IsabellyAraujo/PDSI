@@ -13,5 +13,14 @@ namespace PSI.Produto
         {
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            DAL.DALProduto DALProduto = new DAL.DALProduto();
+            Modelo.Produto produto = new Modelo.Produto(TextBoxNome.Text);
+            DALProduto.Insert(produto);
+
+            Response.Redirect("~\\Produto\\CadastroProduto.aspx");
+        }
     }
 }

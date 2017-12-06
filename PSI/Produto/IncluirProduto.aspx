@@ -1,16 +1,27 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="IncluirProduto.aspx.cs" Inherits="PSI.Produto.IncluirProduto" %>
+﻿<%@ Page Title="Produto" Language="C#" MasterPageFile="~/MasterPage.Master"  AutoEventWireup="true" CodeBehind="IncluirProduto.aspx.cs" Inherits="PSI.Produto.IncluirProduto" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-    </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
+     Incluir Produto
+    <br/>
+    <table>
+        <tr>
+            <td>
+                 Nome
+            </td>
+            <td>
+                <asp:TextBox ID="TextBoxNome" runat="server" BorderColor="Black" BorderStyle="Solid" BorderWidth="1px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Salvar</asp:LinkButton> 
+            </td>
+            <td>
+                <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Produto/CadastroProduto.aspx">Cancelar</asp:LinkButton> 
+            </td>
+        </tr>
+    </table>
+</asp:Content>

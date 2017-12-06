@@ -21,5 +21,9 @@ namespace PSI.Modelo
             this.codigo = acodigo;
             this.nome = anome;
         }
+        public Produto(string anome)
+        {
+            this.nome = anome;
+        }
     }
 }

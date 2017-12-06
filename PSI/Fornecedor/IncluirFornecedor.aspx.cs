@@ -13,5 +13,13 @@ namespace PSI.Fornecedor
         {
 
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            DAL.DALFornecedor DALFornecedor = new DAL.DALFornecedor();
+            Modelo.Fornecedor fornecedor = new Modelo.Fornecedor(TextBoxNome.Text, TextBoxCPF.Text, TextBoxCidade.Text, TextBoxEstado.Text, TextBoxEmail.Text, TextBoxTelefone.Text);
+            DALFornecedor.Insert(fornecedor);
+            Response.Redirect("~\\Cliente\\CadastroFornecedor.aspx");
+        }
     }
 }

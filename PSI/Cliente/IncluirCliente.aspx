@@ -69,8 +69,5 @@
                 <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Cliente/CadastroCliente.aspx">Cancelar</asp:LinkButton> 
             </td>
         </tr>
-    </table>
-    
-    
-    
+    </table> 
 </asp:Content>

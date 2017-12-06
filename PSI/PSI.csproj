@@ -78,6 +78,9 @@
     <Content Include="Fornecedor\ExcluirFornecedor.aspx" />
     <Content Include="Fornecedor\IncluirFornecedor.aspx" />
     <Content Include="Funcionario\CadastroFuncionario.aspx" />
+    <Content Include="Funcionario\EditarFuncionario.aspx" />
+    <Content Include="Funcionario\ExcluirFuncionario.aspx" />
+    <Content Include="Funcionario\IncluirFuncionario.aspx" />
     <Content Include="imagens\pexels-photo-461146.jpeg" />
     <Content Include="PagamentoSalario\CadastroPagamentoSalario.aspx" />
     <Content Include="Produto\CadastroProduto.aspx" />
@@ -181,6 +184,27 @@
     </Compile>
     <Compile Include="Funcionario\CadastroFuncionario.aspx.designer.cs">
       <DependentUpon>CadastroFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\EditarFuncionario.aspx.cs">
+      <DependentUpon>EditarFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\EditarFuncionario.aspx.designer.cs">
+      <DependentUpon>EditarFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\ExcluirFuncionario.aspx.cs">
+      <DependentUpon>ExcluirFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\ExcluirFuncionario.aspx.designer.cs">
+      <DependentUpon>ExcluirFuncionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\IncluirFuncionario.aspx.cs">
+      <DependentUpon>IncluirFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Funcionario\IncluirFuncionario.aspx.designer.cs">
+      <DependentUpon>IncluirFuncionario.aspx</DependentUpon>
     </Compile>
     <Compile Include="PagamentoSalario\CadastroPagamentoSalario.aspx.cs">
       <DependentUpon>CadastroPagamentoSalario.aspx</DependentUpon>

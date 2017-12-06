@@ -37,7 +37,15 @@ namespace PSI.Modelo
             this.email = aemail;
             this.telefone = atelefone;
         }
-
+        public Fornecedor(string anome, string acpf, string acidade, string aestado, string aemail, string atelefone)
+        {
+            this.nome = anome;
+            this.cpf = acpf;
+            this.cidade = acidade;
+            this.estado = aestado;
+            this.email = aemail;
+            this.telefone = atelefone;
+        }
         public Fornecedor(string anome, string acpf, string aemail)
         {
             this.nome = anome;

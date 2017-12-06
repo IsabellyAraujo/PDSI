@@ -19,3 +19,8 @@ C:\Users\20141011110077\Documents\Github\PSI\obj\Debug\PSI.dll
 C:\Users\20141011110077\Documents\Github\PSI\obj\Debug\PSI.pdb
 C:\Users\20141011110077\Documents\Github\PSI\bin\PSI.dll
 C:\Users\20141011110077\Documents\Github\PSI\bin\PSI.pdb
+C:\Users\20141011110077\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.csprojResolveAssemblyReference.cache
+C:\Users\20141011110077\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.dll
+C:\Users\20141011110077\Documents\GitHub\PDSI\PSI\bin\PSI.dll
+C:\Users\20141011110077\Documents\GitHub\PDSI\PSI\bin\PSI.pdb
+C:\Users\20141011110077\Documents\GitHub\PDSI\PSI\obj\Debug\PSI.pdb

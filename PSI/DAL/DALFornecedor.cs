@@ -60,7 +60,7 @@ namespace PSI.DAL
             conn.Open();
 
             SqlCommand cmd = new SqlCommand("Select nome, cpf, email from Fornecedor where codigo = @codigo", conn);
-            cmd.Parameters.AddWithValue("@id", codigo);
+            cmd.Parameters.AddWithValue("@codigo", codigo);
 
             SqlDataReader dr = cmd.ExecuteReader();
 

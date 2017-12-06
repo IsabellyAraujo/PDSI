@@ -9,7 +9,7 @@ namespace PSI
 {
     public partial class Cadastro_Cliente : System.Web.UI.Page
     {
-       int cliente_id;
+       //int cliente_id;
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -25,7 +25,7 @@ namespace PSI
 
         protected void LinkButton2_PreRender(object sender, EventArgs e)
         {
-            (sender as LinkButton).CommandName = cliente_id;
+           // (sender as LinkButton).CommandName = cliente_id;
         }
 
        

@@ -6,7 +6,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
     Cadastro Fornecedor
-    &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Incluir" />
+    &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Incluir" PostBackUrl="~/Fornecedor/IncluirFornecedor.aspx" />
     <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
         <ItemTemplate>
             <table>
