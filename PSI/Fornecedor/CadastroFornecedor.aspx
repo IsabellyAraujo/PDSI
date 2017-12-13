@@ -7,7 +7,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
     Cadastro Fornecedor
     &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Incluir" PostBackUrl="~/Fornecedor/IncluirFornecedor.aspx" />
-    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1">
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnPreRender="LinkButton2_PreRender">
         <ItemTemplate>
             <table>
                  <tr>
@@ -35,11 +35,12 @@
                         <asp:LinkButton ID="LinkButton1" runat="server">Editar</asp:LinkButton>
                     </td>
                     <td>
-                        <asp:LinkButton ID="LinkButton2" runat="server">Excluir</asp:LinkButton>
+                         <asp:LinkButton ID="LinkButton2" runat="server" OnPreRender="LinkButton2_PreRender" OnClick="LinkButton2_Click" Visible="True">Excluir</asp:LinkButton>
                     </td>
                 </tr>
              </table>
         </ItemTemplate>
     </asp:DataList>
+   
     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PDSI_2017_IsabellyConnectionString %>" SelectCommand="SELECT [nome], [cpf], [email] FROM [Fornecedor]"></asp:SqlDataSource>
 </asp:Content>

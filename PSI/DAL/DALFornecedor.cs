@@ -83,13 +83,13 @@ namespace PSI.DAL
 
 
         [DataObjectMethod(DataObjectMethodType.Delete)]
-        public void Delete(int codigo)
+        public void Delete(Modelo.Fornecedor obj)
         {
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-
-            SqlCommand cmd = new SqlCommand("Delete Fornecedor whe codigo = @codigo", conn);
-            cmd.Parameters.AddWithValue("@codigo", codigo);
+            SqlCommand com = conn.CreateCommand();
+            SqlCommand cmd = new SqlCommand("Delete Fornecedor where codigo = @codigo", conn);
+            cmd.Parameters.AddWithValue("@codigo", obj.codigo);
 
             cmd.ExecuteNonQuery();
         }
@@ -127,5 +127,7 @@ namespace PSI.DAL
 
             cmd.ExecuteNonQuery();
         }
+
+       
     }
 }

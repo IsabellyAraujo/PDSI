@@ -52,5 +52,9 @@ namespace PSI.Modelo
             this.cpf = acpf;
             this.email = aemail;
         }
+        public Fornecedor(int acodigo)
+        {
+            this.codigo = acodigo;
+        }
     }
 }
