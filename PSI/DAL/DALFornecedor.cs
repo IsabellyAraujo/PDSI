@@ -99,9 +99,8 @@ namespace PSI.DAL
         {
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-
-            SqlCommand cmd = new SqlCommand("Insert into Fornecedor (nome, cpf, cidade, estado, email, endereco, telefone) values ('@nome', '@cpf', '@cidade', '@estado', '@email', '@telefone')", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
+            SqlCommand com = conn.CreateCommand();
+            SqlCommand cmd = new SqlCommand("Insert into Fornecedor (nome, cpf, cidade, estado, email, telefone) values (@nome, @cpf, @cidade, @estado, @email, @telefone)", conn);
             cmd.Parameters.AddWithValue("@nome", obj.nome);
             cmd.Parameters.AddWithValue("@cpf", obj.cpf);
             cmd.Parameters.AddWithValue("@cidade", obj.cidade);

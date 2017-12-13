@@ -7,40 +7,23 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="Contentplaceholder1" runat="server">
     Cadastro Fornecedor
     &nbsp;&nbsp;&nbsp;<asp:Button ID="Button1" runat="server" Text="Incluir" PostBackUrl="~/Fornecedor/IncluirFornecedor.aspx" />
-    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnPreRender="LinkButton2_PreRender">
+    <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnPreRender="LinkButton2_PreRender" DataKeyField="codigo">
         <ItemTemplate>
-            <table>
-                 <tr>
-                     <td>
-                         Nome
-                     </td>
-                     <td>
-                         CPF
-                     </td>
-                     <td>
-                         EMAIL
-                     </td>
-                </tr>
-                 <tr>
-                   <td>
-                        <asp:Label ID="nomeLabel" runat="server" Text='<%# Eval("nome") %>' />
-                    </td>
-                     <td>
-                        <asp:Label ID="cpfLabel" runat="server" Text='<%# Eval("cpf") %>' />
-                    </td>
-                    <td>
-                        <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
-                    </td>
-                     <td>
-                        <asp:LinkButton ID="LinkButton1" runat="server">Editar</asp:LinkButton>
-                    </td>
-                    <td>
-                         <asp:LinkButton ID="LinkButton2" runat="server" OnPreRender="LinkButton2_PreRender" OnClick="LinkButton2_Click" Visible="True">Excluir</asp:LinkButton>
-                    </td>
-                </tr>
-             </table>
+            nome:
+            <asp:Label ID="nomeLabel" runat="server" Text='<%# Eval("nome") %>' />
+            <br />
+            cpf:
+            <asp:Label ID="cpfLabel" runat="server" Text='<%# Eval("cpf") %>' />
+            <br />
+            email:
+            <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+            <br />
+            codigo:
+            <asp:Label ID="codigoLabel" runat="server" Text='<%# Eval("codigo") %>' />
+            <br />
+            <br />
         </ItemTemplate>
     </asp:DataList>
    
-    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PDSI_2017_IsabellyConnectionString %>" SelectCommand="SELECT [nome], [cpf], [email] FROM [Fornecedor]"></asp:SqlDataSource>
+    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:PDSI_2017_IsabellyConnectionString %>" SelectCommand="SELECT [nome], [cpf], [email], [codigo] FROM [Fornecedor]"></asp:SqlDataSource>
 </asp:Content>
